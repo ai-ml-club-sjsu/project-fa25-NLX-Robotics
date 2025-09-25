@@ -1,9 +1,5 @@
 {
   "project_name": "[NLX Robotics]",
   "purpose": "NLP to MCU Actuator Action",
-  "short_description": "This project tackles the challenge of making robots easier to control by turning everyday language into safe, 
-  executable actions. Using a large language model (LLM) as a planner, natural-language commands are converted into validated JSON plans that drive a lightweight robotic arm with vision and safety checks. 
-  The target audience is students, researchers, and hobbyists interested in bridging AI and robotics without heavy programming overhead. Expected outcomes include a working demo video, open-source code, 
-  and measurable success metrics that prove the system’s reliability—ultimately offering a portfolio-ready platform showcasing how AI can enable intuitive human-robot interaction.",
   "semester": "fa25"
 }
