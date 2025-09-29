@@ -147,7 +147,7 @@ make hw_run
 
 ## Toolchain & Standards
 
-- **Language:** Python 3.11; VS Code
+- **Language:** Python 3.11; VS Code; Arduino C/C++;
 - **Planner:** LLM with function‑calling to a JSON Schema; self‑check re‑prompt
 - **Simulation:** PyBullet (fast start). Optional ROS 2/Gazebo in Spring
 - **Vision:** OpenCV + AprilTag/ArUco (tabletop; pads + block)
@@ -205,8 +205,7 @@ make hw_run
 ---
 
 ## Communication & Links
-
-- **Kanban:** https://github.com/aiml-club/[repo-name]/projects/1  
+ 
 - **Docs site:** https://aiml-club.github.io/[repo-name]/ (mkdocs)  
 - **Demo video:** [link‑to‑be‑added]
 
@@ -227,16 +226,13 @@ make hw_run
 
 ## How to Contribute
 
-- Open an issue with context and a minimal reproduction (if applicable).  
-- Use Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).  
-- PRs must include tests and docs updates where relevant.  
-- See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` for details.
+- No Contribution So Far
 
 ---
 
 ## License
 
-This project is licensed under the **MIT License** — see the `LICENSE` file for details.
+No Liceses So Far
 
 ---
 
@@ -249,7 +245,7 @@ This project is licensed under the **MIT License** — see the `LICENSE` file fo
 
 ## Contact
 
-**Project Lead:** [Lead Name] · 📧 [email@university.edu] · 💼 [LinkedIn URL]  
+**Project Lead:** Manny Han · 📧 taoxu.han@sjsu.edu · 💼 linkedin.com/in/mannyhan  
 **Faculty Advisor:** [Advisor Name] · 📧 [advisor.email@university.edu]
 
 ---
