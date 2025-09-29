@@ -51,22 +51,8 @@ This project builds a production‑quality, portfolio‑ready platform where a u
 
 ## Architecture
 
-```mermaid
-flowchart TD
-  U[User (Voice/Text)] --> P[LLM Planner<br/>(few-shot + JSON Schema)]
-  P -->|JSON Plan| V[Validator & Safety<br/>(schema, units, limits, reach)]
-  V --> T[Task Graph]
-  T --> W[Waypoint Generator]
-  W --> IK[IK Solver]
-  IK --> TR[Trajectory]
-  TR --> C[Controller (PID + profiles)]
-  C --> HW[HW Driver]
-  CAM[Camera/Perception] --> HW
-  CAM -->|pose updates| TR
-  LOG[Telemetry + UI + Logger] -.-> P
-  LOG -.-> V
-  LOG -.-> C
-```
+- Working On This
+
 **Core data contracts:**
 - **Skill JSON:** `task`, `steps[]` with `{ skill, params, constraints, on_fail }`
 - **Waypoints:** timestamped Cartesian poses or joint targets
