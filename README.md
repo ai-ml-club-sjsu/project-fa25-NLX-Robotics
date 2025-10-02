@@ -203,10 +203,14 @@ make hw_run
 
 | Name | Role | Email | GitHub |
 |------|------|-------|--------|
-| [Lead Name] | Project Lead & [Primary Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 2] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 3] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 4] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
+| [Manny Han] | Project Lead | [taoxu.han@sjsu.edu] | [@mannyhan6758](https://github.com/mannyhan6758) |
+| [Srihan Cheemangunta] | [AI Engineer] | [srihan.cheemangunta@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Sandra Paez Olivarez] | [Documentation Engineer] | [sandra.paezolivarez@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Cahide tuncer] | [AI Engineer] | [cahide.tuncer@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Sanome] | [Robotics Engineer] | [sanome.singh@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Ananya Yallapragada] | [Validation Engineer] | [ananya.yallapragada@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Japji Batra] | [AI Engineer] | [japji.batra@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Umer Ghaffar] | [Robotics Engineer] | [umerdanyal.ghaffar@sjsu.edu] | [@github-username](https://github.com/username) |
 
 ---
 
@@ -218,7 +222,7 @@ make hw_run
 
 ## License
 
-No Liceses So Far
+The MIT License
 
 ---
 
@@ -236,5 +240,4 @@ No Liceses So Far
 
 ---
 
-**Last Updated:** 2025-09-29  
-**Next Review:** [YYYY-MM-DD]
+**Last Updated:** 2025-10-01  
