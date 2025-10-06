@@ -20,6 +20,18 @@ This project builds a production‑quality, portfolio‑ready platform where a u
 
 ---
 
+## Lead Contact Information 
+
+Project Lead: [MannyHan]
+📧 Email: [taoxu.han@sjsu.com]
+💼 LinkedIn: [https://www.linkedin.com/in/mannyhan/]
+
+Faculty Advisor: [Advisor Name]
+📧 Email: [advisor.email@university.edu]
+🏢 Office: [Building Name, Room Number]
+
+---
+
 ## Key Objectives
 
 - Convert user text/voice into a validated JSON skills plan
