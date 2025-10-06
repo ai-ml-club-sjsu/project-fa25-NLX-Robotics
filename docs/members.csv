@@ -1,5 +1,16 @@
-Name,Role,Email,github_username,linkedin_url,discord_handle
-Lead Name,Project Lead,email@sjsu.edu,@github-username,https://linkedin.com/in/username,@discord_123
-Member Name 2,Role,email@sjsu.edu,@github-username,https://linkedin.com/in/username,@discord_123
-Member Name 3,Role,email@sjsu.edu,@github-username,https://linkedin.com/in/username,@discord_123
-Member Name 4,Role,email@sjsu.edu,@github-username,https://linkedin.com/in/username,@discord_123
+## Contributors
+
+*For detailed member info including LinkedIn profiles and Discord handles, see `docs/members.csv`.*
+
+| Name | Role | Email | GitHub |
+|------|------|-------|--------|
+| [Manny Han] | Project Lead | [taoxu.han@sjsu.edu] | [@mannyhan6758](https://github.com/mannyhan6758) |
+| [Srihan Cheemangunta] | [AI Engineer] | [srihan.cheemangunta@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Sandra Paez Olivarez] | [Documentation Engineer] | [sandra.paezolivarez@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Cahide tuncer] | [AI Engineer] | [cahide.tuncer@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Sanome] | [Robotics Engineer] | [sanome.singh@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Ananya Yallapragada] | [Validation Engineer] | [ananya.yallapragada@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Japji Batra] | [AI Engineer] | [japji.batra@sjsu.edu] | [@github-username](https://github.com/username) |
+| [Umer Ghaffar] | [Robotics Engineer] | [umerdanyal.ghaffar@sjsu.edu] | [@github-username](https://github.com/username) |
+
+---
