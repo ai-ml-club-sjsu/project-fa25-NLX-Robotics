@@ -1,7 +1,7 @@
 # Prototype-1 Local NLX Agent (Stage-1)
 
 Minimal LLM→Plan→Validate→Execute loop for **local** file-system tasks (no robotics).
-- Planner: Ollama (llama3) via REST.
+- Planner: Ollama (llama3).
 - Validator: JSON Schema + safety policy (sandboxed paths).
 - Executor: safe file ops inside `runs/sandbox/`.
 
