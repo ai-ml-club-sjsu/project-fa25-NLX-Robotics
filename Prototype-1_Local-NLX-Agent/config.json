@@ -1,0 +1,4 @@
+{
+  "model": "llama3",
+  "sandbox_dir": "runs/sandbox"
+}
