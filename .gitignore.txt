@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local artifacts
+runs/
+!runs/.gitkeep
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
