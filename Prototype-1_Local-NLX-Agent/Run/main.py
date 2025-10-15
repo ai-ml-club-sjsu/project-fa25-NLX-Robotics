@@ -23,7 +23,7 @@ def _ensure_dirs():
 
 def interactive_chat():
     """Continuous natural-language conversation with automatic plan → validate → execute."""
-    print("🧠 NLX Local Agent is ready. Type 'exit' or 'quit' to stop.\n")
+    print(" NLX Local Agent is ready. Type 'exit' or 'quit' to stop.\n")
     while True:
         user = input("You> ").strip()
         if user.lower() in {"exit", "quit"}:
@@ -39,7 +39,7 @@ def interactive_chat():
             print(json.dumps(plan, indent=2))
 
             validate_plan(plan, SANDBOX)
-            print("✅ Validation passed")
+            print(" Validation passed")
 
             logs, artifact = run_plan(plan, SANDBOX)
             log_path = ROOT / "runs" / "last_run.json"
@@ -82,7 +82,7 @@ def main():
     print(json.dumps(plan, indent=2))
     print("\nValidating…")
     validate_plan(plan, SANDBOX)
-    print("Validation passed ✅")
+    print("Validation passed ")
 
     if args.dry:
         print("Dry run – not executing.")
