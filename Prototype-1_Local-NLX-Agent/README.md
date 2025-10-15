@@ -15,3 +15,6 @@ Minimal LLM→Plan→Validate→Execute loop for **local** file-system tasks (no
    py -3.11 -m venv .venv
    .\.venv\Scripts\Activate.ps1
    pip install -r "Set Up/requirements.txt"
+3. Run(Start Chat)
+   python -m Run.main --chat
+
