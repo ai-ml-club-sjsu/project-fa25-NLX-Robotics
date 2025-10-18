@@ -6,6 +6,7 @@ Minimal LLM→Plan→Validate→Execute loop for **local** file-system tasks (no
 - Executor: safe file ops inside `runs/sandbox/`.
 
 ## Quickstart
+0. 8gb VRAM Cuda GPU or higher
 1. Install and run Ollama:
    - https://ollama.com/download
    - `ollama pull llama3`
