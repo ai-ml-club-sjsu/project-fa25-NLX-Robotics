@@ -22,8 +22,8 @@ def _ensure_dirs():
 
 
 def interactive_chat():
-    """Continuous natural-language conversation with automatic plan → validate → execute."""
-    print(" NLX Local Agent is ready. Type 'exit' or 'quit' to stop.\n")
+    """Continuous chat: plan → validate → execute."""
+    print("NLX Local Agent ready. Type 'exit' or 'quit' to stop.\n")
     while True:
         user = input("You> ").strip()
         if user.lower() in {"exit", "quit"}:
@@ -31,15 +31,14 @@ def interactive_chat():
             break
         if not user:
             continue
-
         try:
-            print("\n🤖 Thinking...")
+            print("\nThinking...")
             plan = plan_from_prompt(user)
             print("\n--- PLAN ---")
             print(json.dumps(plan, indent=2))
 
             validate_plan(plan, SANDBOX)
-            print(" Validation passed")
+            print("✅ Validation passed")
 
             logs, artifact = run_plan(plan, SANDBOX)
             log_path = ROOT / "runs" / "last_run.json"
@@ -47,10 +46,9 @@ def interactive_chat():
                 json.dumps({"plan": plan, "logs": logs, "artifact": str(artifact)}, indent=2),
                 encoding="utf-8",
             )
-
-            print(f"✨ Done. Artifact: {artifact}\n")
+            print(f"Done. Artifact: {artifact}\n")
         except SafetyError as e:
-            print(f"❌ Safety error: {e}\n")
+            print(f"Safety error: {e}\n")
         except Exception as e:
             print(f"⚠️ Unexpected error: {e}\n")
 
@@ -80,9 +78,10 @@ def main():
 
     print("\n--- PLAN ---")
     print(json.dumps(plan, indent=2))
+
     print("\nValidating…")
     validate_plan(plan, SANDBOX)
-    print("Validation passed ")
+    print("Validation passed")
 
     if args.dry:
         print("Dry run – not executing.")
@@ -92,7 +91,10 @@ def main():
     logs, artifact = run_plan(plan, SANDBOX)
     (ROOT / "runs").mkdir(exist_ok=True, parents=True)
     log_path = ROOT / "runs" / "last_run.json"
-    log_path.write_text(json.dumps({"plan": plan, "logs": logs, "artifact": str(artifact)}, indent=2), encoding="utf-8")
+    log_path.write_text(
+        json.dumps({"plan": plan, "logs": logs, "artifact": str(artifact)}, indent=2),
+        encoding="utf-8",
+    )
 
     print("Done. Logs at runs/last_run.json")
     print(f"Final artifact: {artifact}")

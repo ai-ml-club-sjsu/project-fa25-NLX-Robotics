@@ -47,6 +47,32 @@ def run_plan(plan: Dict[str, Any], sandbox_dir: pathlib.Path) -> Tuple[List[Dict
                 result = {"ok": True, "step": idx, "skill": skill, "path": str(path)}
                 last_artifact = path
 
+            elif skill == "replace_text" or skill == "remove_text":
+                path = rel(params["path"])
+                original = path.read_text(encoding="utf-8")
+                find = params.get("find", "")
+                repl = "" if skill == "remove_text" else params.get("replace", "")
+                # count: 0/None → replace all
+                count_param = params.get("count", 0)
+                count_effective = -1 if (count_param is None or count_param == 0) else int(count_param)
+
+                occurrences = original.count(find) if find else 0
+                new_text = original.replace(find, repl, count_effective)
+
+                if new_text != original:
+                    path.write_text(new_text, encoding="utf-8")
+
+                replaced = occurrences if count_effective == -1 else min(occurrences, count_effective)
+                result = {
+                    "ok": True,
+                    "step": idx,
+                    "skill": skill,
+                    "path": str(path),
+                    "find": find,
+                    "replacements": replaced
+                }
+                last_artifact = path
+
             elif skill == "read_file":
                 path = rel(params["path"])
                 text = path.read_text(encoding="utf-8")
@@ -78,6 +104,7 @@ def run_plan(plan: Dict[str, Any], sandbox_dir: pathlib.Path) -> Tuple[List[Dict
                 if path.exists():
                     path.unlink()
                 result = {"ok": True, "step": idx, "skill": skill, "deleted": str(path)}
+
             else:
                 raise ExecError(f"Unknown skill: {skill}")
 

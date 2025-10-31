@@ -22,15 +22,20 @@
               "list_dir",
               "move_file",
               "copy_file",
-              "delete_file"
+              "delete_file",
+              "replace_text",
+              "remove_text"
             ]
           },
           "params": {
             "type": "object",
             "properties": {
-              "path": { "type": "string", "minLength": 1 },
-              "dest": { "type": "string" },
-              "text": { "type": "string" }
+              "path":    { "type": "string", "minLength": 1 },
+              "dest":    { "type": "string" },
+              "text":    { "type": "string" },
+              "find":    { "type": "string" },
+              "replace": { "type": "string" },
+              "count":   { "type": "integer", "minimum": 0 }
             },
             "additionalProperties": false
           },
