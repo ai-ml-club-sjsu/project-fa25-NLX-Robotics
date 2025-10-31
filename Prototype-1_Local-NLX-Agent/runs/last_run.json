@@ -1,11 +1,11 @@
 {
   "plan": {
-    "task": "create_folder",
+    "task": "write_story",
     "steps": [
       {
         "skill": "create_file",
         "params": {
-          "path": "notes/notes.todo.txt"
+          "path": "story.txt"
         },
         "constraints": {},
         "on_fail": "abort"
@@ -13,16 +13,8 @@
       {
         "skill": "write_text",
         "params": {
-          "path": "notes/notes.todo.txt",
-          "text": "Hello world"
-        },
-        "constraints": {},
-        "on_fail": "abort"
-      },
-      {
-        "skill": "list_dir",
-        "params": {
-          "path": "notes"
+          "path": "story.txt",
+          "text": "In a land of wonder, where dragons soared the skies and magic dwelled in every stone, a young apprentice named Eira stumbled upon a mysterious tome hidden deep within the library's ancient shelves. As she opened its worn leather cover, a burst of magical energy enveloped her, imbuing her with ancient wisdom and setting her on a path to uncover the secrets of the mystical realm."
         },
         "constraints": {},
         "on_fail": "abort"
@@ -34,24 +26,15 @@
       "ok": true,
       "step": 0,
       "skill": "create_file",
-      "path": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\notes\\notes.todo.txt"
+      "path": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\story.txt"
     },
     {
       "ok": true,
       "step": 1,
       "skill": "write_text",
-      "bytes": 11,
-      "path": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\notes\\notes.todo.txt"
-    },
-    {
-      "ok": true,
-      "step": 2,
-      "skill": "list_dir",
-      "path": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\notes",
-      "items": [
-        "notes.todo.txt"
-      ]
+      "bytes": 380,
+      "path": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\story.txt"
     }
   ],
-  "artifact": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\notes\\notes.todo.txt"
+  "artifact": "C:\\Users\\Octavius\\Downloads\\project-fa25-NLX-Robotics\\Prototype-1_Local-NLX-Agent\\runs\\sandbox\\story.txt"
 }
